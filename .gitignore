@@ -8,5 +8,14 @@ atom.symlink/storage
 atom.symlink/themes
 atom.symlink/blob-store
 atom.symlink/recovery
+atom.symlink/github.cson
 
 git/gitconfig.local.symlink
+
+maven/m2.symlink/*
+bin/mt-*
+
+ssh.symlink/*
+!ssh.symlink/config
+
+zsh/localrc.symlink

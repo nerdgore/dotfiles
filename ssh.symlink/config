@@ -1,0 +1,13 @@
+Host *
+    ForwardAgent yes
+    TCPKeepAlive yes
+
+Include ~/.ssh/config_private
+
+# GitHub.com
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_github
+    UseKeychain yes
+    AddKeysToAgent yes

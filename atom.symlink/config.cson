@@ -1,12 +1,60 @@
 "*":
+  "activate-power-mode":
+    plugins:
+      playAudio: true
+      screenShake: true
+  "atom-ide-ui":
+    "atom-ide-diagnostics-ui":
+      autoVisibility: true
+      showDirectoryColumn: true
+    hyperclick:
+      darwinTriggerKeys: "altKey,metaKey"
+  "atom-jest-snippets":
+    toggleSemicolons: false
+  "atom-package-deps":
+    ignored: [
+      "flow-ide"
+    ]
+  "atom-terminal":
+    app: "iTerm.app"
   core:
+    closeDeletedFileTabs: true
     disabledPackages: [
-      "background-tips"
-      "exception-reporting"
-      "metrics"
+      "autocomplete-html-entities"
+      "imdone-atom-github"
+      "imdone-atom"
+      "inline-autocomplete"
+      "json-converter"
+      "linter-doiuse"
+      "markdown-sort-list"
+      "tidy-markdown"
+      "tree-view-git-branch"
+      "advanced-open-file"
+      "atom-html-preview"
+      "atom-wrap-in-tag"
+      "linter-less"
+      "markdown-preview-plus"
+      "npm-install"
+      "open-recent"
+      "rest-client"
+      "run-in-atom"
+      "git-log"
+      "tidy-tabs"
+      "terminal-plus"
+      "open-terminal-here"
+      "tablr"
+      "Hydrogen"
+      "turbo-javascript"
+      "atom-handlebars"
+      "atom-ternjs"
+      "javascript-refactor"
+      "language-gfm"
+      "navigate"
+      "ava"
+      "linter-js-standard"
     ]
     followSymlinks: false
-    hideGitIgnoredFiles: true
+    hideGitIgnoredFiles: false
     ignoredNames: [
       ".bundle"
       ".git"
@@ -15,29 +63,123 @@
       "tmp"
       "vendor"
     ]
-    telemetryConsent: "no"
+    telemetryConsent: "limited"
     themes: [
-      "unity-ui"
-      "glacier-syntax"
+      "neutron-ui"
+      "twilight-refined"
     ]
+  docblockr:
+    auto_add_method_tag: true
+    override_js_var: true
+    per_section_indent: true
   editor:
-    fontFamily: "Menlo"
-    fontSize: 15
+    fontFamily: "FiraCode-Retina"
+    fontSize: 12
     invisibles: {}
-    showIndentGuide: true
-    softWrapAtPreferredLineLength: true
-  "go-plus":
-    panelDisplayMode: "closed"
+    showInvisibles: true
+    softWrapAtPreferredLineLength: false
+    tabLength: 4
+  "fuzzy-finder":
+    ignoredNames: [
+      "node_modules"
+    ]
+    searchAllPanes: true
+    useAlternateScoring: false
+  "git-diff": {}
+  hyperclick:
+    darwinTriggerKeys: "altKey,metaKey"
+  "js-hyperclick":
+    jumpToImport: true
+  "lcov-info":
+    highlightType: "gutter"
   "linter-eslint":
-    useGlobalEslint: true
+    advancedLocalNodeModules: "node_modules"
+    disableFSCache: true
+  "linter-js-standard":
+    checkStyleDevDependencies: true
+    lintHtmlFiles: true
+    lintMarkdownFiles: true
+    showEslintRules: true
+  "linter-ui-default":
+    panelHeight: 43
+    showPanel: true
+  navigate:
+    f1: "http://devdocs.io/#q=&searchterm"
+    f10: "https://duckduckgo.com/?q=&searchterm"
+    f6: "http://www.bing.com/search?q=&searchterm"
+  "open-terminal-here":
+    command: "open -a iTerm.app \"$PWD\""
+  pigments:
+    markerType: "gutter"
+  "platformio-ide-terminal":
+    ansiColors:
+      normal:
+        black: "#1a1a1a"
+        blue: "#889ab4"
+        cyan: "#879bb5"
+        green: "#4b7347"
+        magenta: "#ab824f"
+        red: "#d97f5d"
+        white: "#726d72"
+        yellow: "#eecb75"
+      zBright:
+        brightBlack: "#666666"
+        brightBlue: "#8e93ce"
+        brightCyan: "#bdcfe2"
+        brightGreen: "#a0ab7d"
+        brightMagenta: "#d6b67b"
+        brightRed: "#d68c51"
+        brightWhite: "#e5e5e5"
+        brightYellow: "#e3f3b2"
+    core:
+      shell: "/bin/zsh"
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+      isDisabledIfNoConfigFile: true
+      respectEslintignore: false
+      showInStatusBar: true
+    prettierEslintOptions: {}
+    prettierOptions:
+      semi: false
+      singleQuote: true
+    useEslint: true
   "release-notes":
     viewedVersion: "0.89.0"
   "spell-check":
     grammars: [
+      "string.quoted.*"
+      "comment.*"
       "text.plain"
       "source.gfm"
       "text.git-commit"
       "text.html.basic"
     ]
+    locales: [
+      "en-US"
+      "de-DE"
+    ]
+  tablr:
+    csvEditor:
+      quoted: true
+  "todo-show":
+    ignoreThesePaths: [
+      "node_modules"
+      "vendor"
+      "bower_components"
+      "*.pdf"
+    ]
+    statusBarIndicator: true
+  "toggle-quotes":
+    quoteCharacters: "\"'`"
+  "tree-view":
+    hideIgnoredNames: true
   welcome:
     showOnStartup: false
+  whitespace: {}
+".json.source":
+  editor:
+    tabLength: 2
+".source.yaml":
+  editor:
+    tabLength: 2

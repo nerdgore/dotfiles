@@ -1,5 +1,6 @@
 [user]
         name = AUTHORNAME
-        email = AUTHOREMAIL
+        # avoid comitting to github with corp address
+        # email = AUTHOREMAIL
 [credential]
         helper = GIT_CREDENTIAL_HELPER
